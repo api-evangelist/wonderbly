@@ -1,7 +1,23 @@
 aid: wonderbly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wonderbly.png
 name: Wonderbly *
-description: 'Wonderbly * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Wonderbly is an online publisher that makes personalized books and gifts for kids and
+  adults. Founded in 2013 (originally as Lost My Name), it lets customers design and buy books customized
+  with a recipient''s name, themes, and occasion, and has delighted over 10 million readers worldwide.
+  The consumer e-commerce site operates across 40+ language and regional storefronts (US, UK, AU, CA,
+  DE, FR, NL, IT, ES). Backed by GV. No public developer API, developer portal, or API documentation
+  was found during enrichment; this remains a company profile lead in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/wonderbly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- E-commerce
+- Personalization
+- Publishing
+- Books
+- Gifts
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wonderbly-domain-security.yml
 - type: Website
-  url: http://wonderbly.com
+  url: https://wonderbly.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
